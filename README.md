@@ -14,7 +14,12 @@ To avoid conflicting with regular YAML files, the plugin defines a new
 file type, "jjb\_yaml".  All customisations are applied to this file
 type.
 
-Currently, it is up to the user to set this file type appropriately.
+Currently, it is up to you to set this file type appropriately.  If you
+want it to apply to all YAML files, you can add this to your `.vimrc`:
+
+```vim
+autocmd FileType yaml setlocal filetype=jjb_yaml
+```
 
 ## Basic Configuration
 
