@@ -14,16 +14,23 @@ To avoid conflicting with regular YAML files, the plugin defines a new
 file type, "jjb\_yaml".  All customisations are applied to this file
 type.
 
-Currently, it is up to you to set this file type appropriately.  If you
+By default, it is up to you to set this file type appropriately.  If you
 want it to apply to all YAML files, you can add this to your `.vimrc`:
 
 ```vim
 autocmd FileType yaml setlocal filetype=jjb_yaml
 ```
 
+Alternatively, you could configure autodetection of JJB YAML files; see
+below.
+
 ## Basic Configuration
 
-At the moment, the plugin doesn't provide any configuration options.
+To configure autodetection of JJB YAML files, set this in your .vimrc:
+
+```vim
+let g:jenkins_job_builder_autodetect = 1
+```
 
 ## Installation
 
